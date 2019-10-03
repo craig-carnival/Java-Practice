@@ -10,14 +10,16 @@ import java.util.regex.Pattern;
 
 public class StringsYo {
 	public static void main(String[] args) {
-		LocalDate date = LocalDate.now();
-		DateTimeFormatter dtf = DateTimeFormatter.ofPattern("E");
-		System.out.println(dtf.format(date));
+		// Made chandes to use the function
+		BufferedReader read = new BufferedReader(new InputStreamReader(System.in));
+		String x = read.readLine();
+		String regex = read.readLine();
+		System.out.println(findRemaining(x, regex));
 	}
 
-	static String findRemaining(String abc) {
-		if (abc.contains("Abc")) {
-			abc = abc.replaceFirst("Abc", "");
+	static String findRemaining(String abc, String regex) {
+		if (abc.contains(regex)) {
+			abc = abc.replaceFirst(regex, "");
 			return findRemaining(abc);
 		} else {
 			return abc;
