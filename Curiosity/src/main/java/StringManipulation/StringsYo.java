@@ -1,13 +1,7 @@
 package StringManipulation;
 
-/* These classes are not required
-import java.time.LocalDate;
-import java.time.LocalDateTime;
-import java.time.LocalTime;
-import java.time.format.DateTimeFormatter;
-import java.util.Date;
-import java.util.regex.Matcher;
-import java.util.regex.Pattern;
+/*
+* removed all not necessary impprts
 */
 
 import java.io.BufferedReader;
